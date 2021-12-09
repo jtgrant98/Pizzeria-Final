@@ -8,3 +8,4 @@ app_name = 'pizzas'
 
 urlpatterns = [
     path('', views.index, name='index'),
+]
