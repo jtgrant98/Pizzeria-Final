@@ -6,6 +6,13 @@
 
 
 {% block content %}
+<p>
+    {% if pizza.header_image %}
+    <img src="{{ pizza.header_image.url }}">
+    {% endif %}
+    </br /><br />
+
+</p>
 
 <p>Pizza: {{ pizza.name }}</p>
 <ul>
@@ -47,10 +54,5 @@
     <a href="{% url 'pizzas:new_comment' pizza.id %}">Add a new comment</a>
 </p>
 
-<P>
-   
-    <img src="https://pngimg.com/uploads/pizza/pizza_PNG7142.png" alt="Pizza">
-    
 
-</P>
 {% endblock content %}
